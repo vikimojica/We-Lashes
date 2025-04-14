@@ -1,0 +1,394 @@
+/*Declaracion de colores*/
+:root {
+    --primary-color:var(#F0ABCC);
+    --secundary-color:var(#E45EC2);
+    background: #f0abcc88;
+    --balck-color:var(#0c0908);
+    --white-color:var(#FFFFFF);
+
+}
+
+/*Resetear valores generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'TiroTamil';
+} 
+
+/*Declarar fuentes*/
+@font-face {
+    font-family:'TiroTamil';
+    src: url(./media/TiroTamil-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Sendflowers';
+    src: url(./media/Send_Flowers/SendFlowers-Regular.ttf);
+}
+
+
+html{
+    font-family: 'TiroTamil';
+    font-size: 62.5%;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.7rem;
+}
+p{
+    font-size: 1.5rem;
+}
+
+/*HEADER MENU - */
+
+header{
+    background-color: #0c0908;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    width: 60px;
+
+}
+
+nav {
+    width: 60%;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    color:#E45EC2;
+}
+
+/*MAIN INDEX*/
+
+.bannerPresentacion{
+    background-image: url(./media/bannerpresentacionn.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-weight: bold;
+    color:#FFFFFF;
+    text-transform: uppercase;
+    padding: 100px 0;
+}
+
+.bannerPresentacion h1 span.we {
+    font-family: 'Sendflowers';
+    font-size: 6rem;
+    
+}
+
+.bannerPresentacion h2{
+    font-size: 2rem;
+    margin-top: 15px;
+}
+
+/*CUADROS CON IMAGENES GENERALES INDEX*/
+
+.cuadrosPresentacion {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cuadrosPresentacion section {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    background-color: #E45EC2;
+}
+
+.cuadrosPresentacion section img {
+    width: 200px; 
+    height: auto;
+    border-radius: 50px;   
+}
+
+.cuadrosPresentacion section p {
+    margin: 20px;
+    font-size: 20px; 
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+/*SEGUNDO BANNER DE PAGINA DE INICIO*/
+
+div.bannerSegundo {
+    background-image: url(./media/Bannersegundo.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px;
+    padding: 50px 0;
+}
+
+/*FOTO Y DESCRIPCION DE LOS SERVICIOS GENERALES*/
+
+.fotosDeServicios section {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.fotosDeServicios img {
+    width: 200px; 
+    height: auto;
+    border-radius: 50px;
+    transition: transform 0.5s;
+}
+
+.fotosDeServicios img:hover{
+    transform: scale(1.5);
+
+}
+
+.fotosDeServicios p {
+    background-color: #e45ec28c;
+    font-family: 'TiroTamil';
+    font-size: 15px;
+    text-align: center;
+    
+}
+
+/*MAIN TIPS*/
+
+.contenedor-grid {
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "number1 texto1 img1"
+    "number2 texto2 img2"
+    "number3 texto3 img3"
+    "number4 texto4 img4"
+    "number5 texto5 img5"
+    "number6 texto6 img6";
+
+    grid-template-columns: 10% 60% 20%;
+    grid-template-rows: 100px 250px 250px 250px 250px 250px 250px;
+
+    margin-left: 50px;
+    align-items: center;
+}
+
+.grid-titulo {
+    grid-area: titulo;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.grid-number-1 {
+    grid-area: number1;
+}
+
+.grid-number-2 {
+    grid-area: number2;
+}
+
+.grid-number3 {
+    grid-area: number3;
+}
+
+.grid-number-4 {
+    grid-area: number4;
+}
+
+.grid-number-5 {
+    grid-area: number5;
+}
+
+.grid-number-6 {
+    grid-area: number6;
+}
+
+.grid-texto-1 {
+    grid-area: texto1;
+}
+
+.grid-texto-2 {
+    grid-area: texto2;
+}
+
+.grid-texto-3 {
+    grid-area: texto3;
+}
+
+.grid-texto-4 {
+    grid-area: texto4;
+}
+
+.grid-texto-5 {
+    grid-area: texto5;
+}
+.grid-texto-6 {
+    grid-area: texto6;
+}
+
+.grid-img-1 {
+    grid-area: img1;
+}
+
+.grid-img-2 {
+    grid-area: img2;
+}
+
+.grid-img-3 {
+    grid-area: img3;
+}
+
+.grid-img-4 {
+    grid-area: img4;
+}
+
+.grid-img-5 {
+    grid-area: img5;
+}
+
+.grid-img-6 {
+    grid-area: img6;
+}
+
+.contenedor-grid img {
+    width: 50%;
+    height: auto;
+    margin: 5px;
+}
+
+.contenedor-grid p {
+    font-size: 2rem;
+    font-family: 'TiroTamil';
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: #E45EC2;
+    display: flex;
+    padding: 10px;
+    font-family: 'TiroTamil';
+    justify-content: space-evenly;
+}
+
+
+.footer img {
+    width: 50px; 
+    height: auto;
+    border-radius: 100px;
+    
+}
+
+.footer p {
+    text-align: center;
+    margin: 10px;
+
+}
+
+.logoWP{
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 80px;
+}
+
+
+
+
+
+/*Responsive movile*/
+@media only screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      padding: 10px;
+    }
+    .logo {
+      width: 40px;
+      margin-bottom: 10px;
+    }
+    nav {
+      width: 100%;
+    }
+    nav ul {
+      flex-direction: column;
+      padding: 0;
+    }
+    nav li {
+      margin-bottom: 10px;
+    }
+    .bannerPresentacion {
+
+        width: 100%;
+        height: auto;
+    }
+    .cuadrosPresentacion {
+      flex-direction: column;
+
+    }
+    .cuadrosPresentacion section {
+      margin-bottom: 10px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .cuadrosPresentacion img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .cuadrosPresentacion p {
+        text-transform: lowercase;
+        font-size: 10px;
+
+    }
+
+    .fotosDeServicios section {
+      flex-direction: column;
+    }
+    .fotosDeServicios img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .footer {
+      flex-direction: column;
+      padding: 20px;
+    }
+    .logoWP {
+      width: 60px;
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+
