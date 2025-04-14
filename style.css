@@ -166,10 +166,10 @@ div.bannerSegundo {
     width: 200px; 
     height: auto;
     border-radius: 50px;
-    transition: transform 0.5s;
+    transform: scale(0.5);
 }
 
-.fotosDeServicios img:hover{
+.fotosDeServicios img:hover {
     transform: scale(1.5);
 
 }
@@ -181,6 +181,83 @@ div.bannerSegundo {
     text-align: center;
     
 }
+
+/*MAIN SERVICIOS*/
+
+
+/*BANNER SERVICIOS*/
+.bannerServicios {
+    background-image: url(../media/bannerservicios.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-weight: bold;
+    color:#FFFFFF;
+    text-transform: uppercase;
+    padding: 100px 0;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+
+.bannerServicios h1 span.we {
+    font-family: 'Sendflowers';
+    font-size: 6rem;  
+}
+
+.bannerServicios h2{
+    font-size: 2rem;
+    margin-top: 15px;
+}
+
+
+.tituloServicios{
+    font-size: 2rem;
+    text-align: center;
+    color: #E45EC2;
+    text-shadow: 4px 4px 2px #FFFFFF;
+    margin-top: 20px;
+}
+
+.cuadrosServicios {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.cuadrosServicios section {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    background-color: #E45EC2;
+    justify-content: space-around;
+}
+
+.cuadrosServicios section img {
+    width: 100px; 
+    height: auto;
+    border-radius: 100px;
+    transform: scale(0.5);   
+}
+
+.cuadrosServicios img:hover{
+    transform: scale(2.5);
+}
+  
+
+.cuadrosServicios section p {
+    margin: 20px;
+    font-size: 15px; 
+    color: #FFFFFF;
+    margin-top: 50px;
+}
+
+.retiro{
+    width: 50%;
+    height: 200px;
+}
+
+
+
+
 
 /*MAIN TIPS*/
 
@@ -292,6 +369,44 @@ div.bannerSegundo {
     font-family: 'TiroTamil';
 }
 
+/*MAIN INFO*/
+  
+.bannerInfo {
+    display: flex;
+    background-image: url(./media/bannerNosotros.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0;
+    
+}
+
+
+.tituloPresentacion {
+    display: flex;
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-shadow: 4px 4px 2px #E45EC2;
+    text-align: center;
+    font-weight: bold;
+    flex-direction: column;
+    background-color: #0c0908;
+   
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.presentacion p{
+    background-color: #0c0908;
+    margin:20px;
+    color:#FFFFFF
+}
 
 /*FOOTER*/
 
@@ -387,7 +502,7 @@ div.bannerSegundo {
       margin-bottom: 20px;
     }
 
-    /*MAIN */
+    /*MAIN TIPS*/
     
     .contenedor-grid {
         grid-template-columns: 20% 70%;
