@@ -37,34 +37,44 @@
  
      <main>
 
-        <h1 class="contactTittle">TITULO DE LA PAGINA DE CONTACTO</h1>
-
-        <form action="formulario" method="post">
-           
-            <h2>COMPLETA LOS SIGUIENTES DATOS PARA CONSEGUIR TU TURNO</h2>
-            
-            <label for="nombre">Nombre y Apellido:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
-
-            <label for="servicios">Servicios Requeridos:</label>
-            <select id="servicios" name="servicios[]" multiple required>
-                <option value="Extensiones">Extensiones</option>
-                <option value="Perfilado">Perfilado</option>
-                <option value="Peinados">Peinados</option>
-                <option value="Retiro">Retiro</option>
-                <option value="Lifting">Lifting</option>
-            </select>
-            
-            <label for="celular">Número de Celular:</label>
-            <input type="tel" id="celular" name="celular" required>
-            <input type="submit" value="Enviar">
-
-        </form>
-
- 
+        <div class="contenedor-contacto">
+  <h1 class="titulo-contacto">¿LISTA PARA SACAR TU MEJOR VERSION?</h1>
+  <h2 class="titulo-secundario">COMPLETA LOS SIGUIENTES DATOS PARA CONSEGUIR TU TURNO</h2>
+  <form action="formulario" method="post">
+    <div class="nombre">
+      <label for="nombre">Nombre y Apellido:</label>
+      <input type="text" id="nombre" name="nombre" required>
+    </div>
+    <div class="fecha">
+      <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+    </div>
+    <div class="servicio">
+      <label for="servicios">Servicios Requeridos:</label>
+      <select id="servicios" name="servicios">
+        <option value="">Selecciona los servicios</option>
+        <option value="Extensiones">Pestañas Clasicas</option>
+        <option value="Perfilado">Lashes Volumen Griego</option>
+        <option value="Peinados">Lashes Hibridas</option>
+        <option value="Retiro">Lashes Hibridas Intenso</option>
+        <option value="Lifting">Lashes Volumen Hawaiano</option>
+        <option value="Lifting">Lashes Foxy Eyes</option>
+        <option value="Lifting">Lashes Foxy Eyes Intenso</option>
+        <option value="Lifting">Servicio de retiro</option>
+        <option value="Lifting">Laminado de Cejas</option>
+        <option value="Lifting">Diseño y Perfilado de Cejas</option>
+        <option value="Lifting">Braids</option>
+      </select>
+    </div>
+    <div class="celular">
+      <label for="celular">Número de Celular:</label>
+      <input type="tel" id="celular" name="celular" required>
+    </div>
+    <div class="boton-contacto">
+      <input type="submit" value="Enviar">
+    </div>
+  </form>
+</div>
      </main>
      
      

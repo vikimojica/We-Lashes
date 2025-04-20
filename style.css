@@ -2,7 +2,7 @@
 :root {
     --primary-color:var(#F0ABCC);
     --secundary-color:var(#E45EC2);
-    background: #f0abcc88;
+    background: #f15aa388;
     --balck-color:var(#0c0908);
     --white-color:var(#FFFFFF);
 
@@ -223,7 +223,7 @@ div.bannerSegundo {
 }
 
 .boton{
-    background-color:#E45EC2 !important ;
+    background-color: #4CAF50 !important ;
     border-color: #0c0908 !important ;
     
 }
@@ -393,6 +393,89 @@ div.bannerSegundo {
     color:#FFFFFF
 }
 
+/*MAIN CONTACTO*/
+.contenedor-contacto {
+    display: grid;
+    grid-template-areas:
+      "titulo titulo"
+      "subtitulo subtitulo"
+      "nombre nombre"
+      "fecha fecha"
+      "servicios servicios"
+      "celular celular"
+      "boton boton";
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #F0ABCC;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .titulo-contacto {
+    grid-area: titulo;
+    text-align: center;
+    text-shadow: #ccc;
+  }
+  
+  .titulo-secundario {
+    grid-area: subtitulo;
+    text-align: center;
+  }
+  
+  .nombre {
+    grid-area: nombre;
+  }
+  
+  .fecha {
+    grid-area: fecha;
+  }
+  
+  .servicio {
+    grid-area: servicios;
+  }
+  
+  .celular {
+    grid-area: celular;
+  }
+  
+  .boton-contacto {
+    grid-area: boton;
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  .nombre, .fecha, .servicio, .celular {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="date"], input[type="tel"], select {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
 /*FOOTER*/
 
 .footer {
@@ -521,6 +604,20 @@ div.bannerSegundo {
     .contenedor-grid p {
         text-align: center;
     }
+
+    /*MAIN CONTACTOS*/
+    .contenedor-contacto {
+        grid-template-columns: 100%;
+        grid-gap: 10px;
+        padding: 10px;
+      }
+      .titulo-contacto {
+        font-size: 24px;
+      }
+      .titulo-secundario {
+        font-size: 18px;
+      }
+    
 
     /*FOOTER*/
     .footer {
