@@ -448,6 +448,7 @@ div.bannerSegundo {
     margin-top: 5px;
   }
   
+  
   .nombre, .fecha, .servicio, .celular {
     display: flex;
     flex-direction: column;
@@ -474,7 +475,7 @@ div.bannerSegundo {
     border-radius: 5px;
     cursor: pointer;
   }
-  
+
 
 /*FOOTER*/
 
