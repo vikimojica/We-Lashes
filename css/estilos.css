@@ -340,4 +340,73 @@ header nav ul li a:hover {
   color: #FFFFFF;
 }
 
+/*sass --watch sass/estilos.scss css/estilos.css*/
+/*Main contacto*/
+.contenedor-contacto {
+  display: grid;
+  grid-template-areas: "titulo titulo" "subtitulo subtitulo" "nombre nombre" "fecha fecha" "servicios servicios" "celular celular" "boton boton";
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #F0ABCC;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contenedor-contacto .titulo-contacto {
+  grid-area: titulo;
+  text-align: center;
+  text-shadow: #ccc;
+}
+.contenedor-contacto .titulo-secundario {
+  grid-area: subtitulo;
+  text-align: center;
+}
+.contenedor-contacto .nombre {
+  grid-area: nombre;
+  display: flex;
+  flex-direction: column;
+}
+.contenedor-contacto .fecha {
+  grid-area: fecha;
+  display: flex;
+  flex-direction: column;
+}
+.contenedor-contacto .servicio {
+  grid-area: servicios;
+  display: flex;
+  flex-direction: column;
+}
+.contenedor-contacto .celular {
+  grid-area: celular;
+  display: flex;
+  flex-direction: column;
+}
+.contenedor-contacto .boton-contacto {
+  grid-area: boton;
+  text-align: center;
+  margin-top: 5px;
+}
+.contenedor-contacto label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.contenedor-contacto input[type=text], .contenedor-contacto input[type=date], .contenedor-contacto input[type=tel], .contenedor-contacto select {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contenedor-contacto input[type=submit] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=estilos.css.map */
