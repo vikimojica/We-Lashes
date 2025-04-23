@@ -310,7 +310,7 @@ header nav ul li a:hover {
 /*Banner Info*/
 .bannerInfo {
   display: flex;
-  background-image: url(./media/bannerNosotros.jpg);
+  background-image: url(../media/bannerNosotros.jpg);
   background-size: cover;
   background-position: center;
   padding: 200px 0;
