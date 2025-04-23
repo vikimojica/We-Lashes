@@ -1,0 +1,29 @@
+@use '_variables.scss' as*;
+@use '_reset.scss';
+@use '_fonts.scss';
+
+.footer{
+    background-color: $secundary-color;
+    display: flex;
+    padding: 10px;
+    font-family: 'TiroTamil';
+    justify-content: space-evenly;
+    
+    img{
+        width: 50px; 
+        height: auto;
+        border-radius: 100px;
+    }
+    
+    p{
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+.logoWP{
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 80px;
+}

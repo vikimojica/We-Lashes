@@ -42,6 +42,7 @@ p {
 }
 
 /*sass --watch sass/estilos.scss css/estilos.css*/
+/*Header*/
 header {
   background-color: #0c0908;
   display: flex;
@@ -407,6 +408,31 @@ header nav ul li a:hover {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+/*sass --watch sass/estilos.scss css/estilos.css*/
+.footer {
+  background-color: #E45EC2;
+  display: flex;
+  padding: 10px;
+  font-family: "TiroTamil";
+  justify-content: space-evenly;
+}
+.footer img {
+  width: 50px;
+  height: auto;
+  border-radius: 100px;
+}
+.footer p {
+  text-align: center;
+  margin: 10px;
+}
+
+.logoWP {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  width: 80px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
