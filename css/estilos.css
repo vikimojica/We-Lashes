@@ -435,4 +435,96 @@ header nav ul li a:hover {
   width: 80px;
 }
 
+/*sass --watch sass/estilos.scss css/estilos.css*/
+/*Responsive movile*/
+@media only screen and (max-width: 768px) {
+  /*Header*/
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+  header .logo {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+  header nav ul li {
+    margin-bottom: 10px;
+  }
+  /*Main Index*/
+  .bannerPresentacion {
+    width: 100%;
+    height: auto;
+  }
+  .cuadrosPresentacion {
+    flex-direction: column;
+  }
+  .cuadrosPresentacion section {
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .cuadrosPresentacion section img {
+    width: 100%;
+    height: auto;
+  }
+  .cuadrosPresentacion section p {
+    text-transform: lowercase;
+    font-size: 10px;
+  }
+  /*Main Servicios*/
+  .bannerServicios {
+    padding: 80px 0;
+  }
+  .bannerServicios .we {
+    font-size: 4rem;
+  }
+  .bannerServicios h2 {
+    font-size: 1.5rem;
+  }
+  /*Main Tips*/
+  .contenedor-grid {
+    grid-template-columns: 20% 70%;
+    grid-template-rows: repeat(19, auto);
+    grid-template-areas: "titulo titulo" "number1 img1" "texto1 texto1" "number2 img2" "texto2 texto2" "number3 img3" "texto3 texto3" "number4 img4" "texto4 texto4" "number5 img5" "texto5 texto5" "number6 img6" "texto6 texto6";
+  }
+  .contenedor-grid .grid-titulo {
+    font-size: 3rem;
+  }
+  .contenedor-grid p {
+    text-align: center;
+  }
+  /*Main Contactos*/
+  .contenedor-contacto {
+    grid-template-columns: 100%;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  .contenedor-contacto .titulo-contacto {
+    font-size: 24px;
+  }
+  .contenedor-contacto .titulo-secundario {
+    font-size: 18px;
+  }
+  /*Footer*/
+  .footer {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+  }
+  .logoWP {
+    width: 60px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+}
+
 /*# sourceMappingURL=estilos.css.map */
