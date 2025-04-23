@@ -1,0 +1,101 @@
+@use '_variables.scss' as*;
+@use '_reset.scss';
+@use '_fonts.scss';
+
+/*Main Tips*/
+
+/*contenedor grid*/
+.contenedor-grid{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "number1 texto1 img1"
+    "number2 texto2 img2"
+    "number3 texto3 img3"
+    "number4 texto4 img4"
+    "number5 texto5 img5"
+    "number6 texto6 img6";
+
+    grid-template-columns: 10% 60% 20%;
+    grid-template-rows: 100px 250px 250px 250px 250px 250px 250px;
+
+    margin-left: 50px;
+    align-items: center;
+    
+    img{
+        width: 50%;
+        height: auto;
+        margin: 5px;
+    }
+
+    p{
+        font-size: 2rem;
+        font-family: $font-base;
+    }
+}
+
+/*declaracion de grid areas*/
+.grid-titulo{
+    grid-area: titulo;
+    text-align: center;
+    color: #0c0908;
+    text-shadow: 4px 4px 2px rgba(218, 208, 208, 0.6);
+    margin-top: 10px;
+}
+
+.grid-number-1 {
+    grid-area: number1;
+}
+.grid-number-2 {
+    grid-area: number2;
+}
+.grid-number-3 {
+    grid-area: number3;
+}
+.grid-number-4 {
+    grid-area: number4;
+}
+.grid-number-5 {
+    grid-area: number5;
+}
+.grid-number-6 {
+    grid-area: number6;
+}
+
+.grid-texto-1 {
+    grid-area: texto1;
+}
+.grid-texto-2 {
+    grid-area: texto2;
+}
+.grid-texto-3 {
+    grid-area: texto3;
+}
+.grid-texto-4 {
+    grid-area: texto4;
+}
+.grid-texto-5 {
+    grid-area: texto5;
+}
+.grid-texto-6 {
+    grid-area: texto6;
+}
+
+.grid-img-1 {
+    grid-area: img1;
+}
+.grid-img-2 {
+    grid-area: img2;
+}
+.grid-img-3 {
+    grid-area: img3;
+}
+.grid-img-4 {
+    grid-area: img4;
+}
+.grid-img-5 {
+    grid-area: img5;
+}
+.grid-img-6 {
+    grid-area: img6;
+}
