@@ -152,4 +152,54 @@ header nav ul li a:hover {
   padding: 10px;
 }
 
+/*sass --watch sass/estilos.scss css/estilos.css*/
+/*Main Servicios*/
+/*Banner servicios*/
+.bannerServicios {
+  background-image: url(../media/bannerservicios.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 100px 0;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.bannerServicios .we {
+  font-family: "Sendflowers";
+  font-size: 6rem;
+}
+.bannerServicios h2 {
+  font-size: 2rem;
+  margin-top: 15px;
+}
+
+/*Tarjetas servicios*/
+.tarjetas {
+  height: 400px;
+  padding: 5px;
+}
+.tarjetas img {
+  width: 100%;
+  height: 200px;
+  object-fit: fill;
+  transition: 0.5s;
+}
+.tarjetas img:hover {
+  transform: scale(1.2);
+}
+.tarjetas .boton {
+  background-color: #4CAF50;
+  border-color: #0c0908;
+}
+.tarjetas .boton:hover {
+  background-color: #F0ABCC;
+  border-color: #E45EC2;
+}
+
 /*# sourceMappingURL=estilos.css.map */

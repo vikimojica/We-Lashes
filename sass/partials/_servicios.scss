@@ -1,0 +1,55 @@
+@use '_variables.scss' as*;
+@use '_reset.scss';
+@use '_fonts.scss';
+
+/*Main Servicios*/
+
+/*Banner servicios*/
+.bannerServicios{
+    background-image: url(../media/bannerservicios.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-weight: bold;
+    color:#FFFFFF;
+    text-transform: uppercase;
+    padding: 100px 0;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    .we{
+        font-family: $font-tittle-we;
+        font-size: 6rem;
+    }
+
+    h2{
+        font-size: 2rem;
+        margin-top: 15px;
+    }
+
+}
+
+/*Tarjetas servicios*/
+
+.tarjetas{
+    height: 400px;
+    padding: 5px;
+
+    img{
+        width: 100%;
+    height: 200px;
+    object-fit: fill;
+    transition: 0.5s;
+
+    &:hover{
+        transform: scale(1.2); 
+    }
+    }
+
+    .boton{
+        @include boton-estilos;
+    }
+}
