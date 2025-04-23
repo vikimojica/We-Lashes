@@ -1,12 +1,14 @@
-/*Comentario de prueba*/
+/*sass --watch sass/estilos.scss css/estilos.css*/
 
-@use "./partials/_variables.scss" as*;
+@use "./partials/_variables" as*;
 
 @use "./partials/reset";
 
 @use "./partials/fonts";
 
 @use "./partials/header";
+
+@use "./partials/index"
 
 
 

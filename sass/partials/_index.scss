@@ -1,0 +1,76 @@
+
+@use '_variables.scss' as*;
+@use '_reset.scss';
+@use '_fonts.scss';
+
+/*Banner presentacion Index*/
+
+.bannerPresentacion{
+    background-image: url(./media/bannerpresentacionn.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-weight: bold;
+    color: $white-color;
+    text-transform: uppercase;
+    padding: 100px 0;
+    .we{
+        font-family: $font-tittle-we;
+        font-size: 6rem;
+    }
+}
+
+
+/*Cuadros Img generales Index*/
+
+.cuadrosPresentacion{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+    section{
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        background-color: $secundary-color;
+        
+        img{
+            width: 200px; 
+            height: auto;
+            border-radius: 50px;
+        }
+        
+        p{
+            margin: 20px;
+            font-size: 20px; 
+            color: #FFFFFF;
+            text-transform: uppercase;
+            margin-top: 50px;  
+        }
+    }
+}
+
+/*Segundo banner Index*/
+
+.bannerSegundo{
+    background-image: url(./media/Bannersegundo.jpg);
+    background-size: cover;
+    background-position: center;
+    color: $white-color;
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px;
+    padding: 50px 0;
+}
+
+/*Tarjetas Index*/
+
+.tarjetas-index{
+    .tarjetas{
+        width: 18rem;
+        background-color: hsl(315, 93%, 89%);
+        margin-bottom: 20px;
+
+    }
+    
+}
