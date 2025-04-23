@@ -1,0 +1,41 @@
+@use '_variables.scss' as*;
+@use '_reset.scss';
+@use '_fonts.scss';
+
+/*Main Info*/
+
+/*Banner Info*/
+
+.bannerInfo{
+    display: flex;
+    background-image: url(./media/bannerNosotros.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0;
+}
+
+.tituloPresentacion{
+    display: flex;
+    font-size: 2rem;
+    color: $white-color;
+    text-shadow: 4px 4px 2px #E45EC2;
+    text-align: center;
+    font-weight: bold;
+    flex-direction: column;
+    background-color: $black-color;
+}
+
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    
+    p{
+        background-color: $black-color;
+        margin: 20px;
+        color: $white-color;
+    }
+}

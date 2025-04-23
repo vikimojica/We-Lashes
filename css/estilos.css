@@ -304,4 +304,40 @@ header nav ul li a:hover {
   grid-area: img6;
 }
 
+/*sass --watch sass/estilos.scss css/estilos.css*/
+/*Main Info*/
+/*Banner Info*/
+.bannerInfo {
+  display: flex;
+  background-image: url(./media/bannerNosotros.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+}
+
+.tituloPresentacion {
+  display: flex;
+  font-size: 2rem;
+  color: #FFFFFF;
+  text-shadow: 4px 4px 2px #E45EC2;
+  text-align: center;
+  font-weight: bold;
+  flex-direction: column;
+  background-color: #0c0908;
+}
+
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.presentacion p {
+  background-color: #0c0908;
+  margin: 20px;
+  color: #FFFFFF;
+}
+
 /*# sourceMappingURL=estilos.css.map */
