@@ -6,7 +6,7 @@
 /*Banner presentacion Index*/
 
 .bannerPresentacion{
-    background-image: url(./media/bannerpresentacionn.jpg);
+    background-image: url(../media/bannerpresentacionn.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -53,7 +53,7 @@
 /*Segundo banner Index*/
 
 .bannerSegundo{
-    background-image: url(./media/Bannersegundo.jpg);
+    background-image: url(../media/Bannersegundo.jpg);
     background-size: cover;
     background-position: center;
     color: $white-color;
@@ -70,7 +70,19 @@
         width: 18rem;
         background-color: hsl(315, 93%, 89%);
         margin-bottom: 20px;
-
+        .boton{
+            @include boton-estilos;
+        }
     }
     
+}
+
+.texto-card{
+    p{
+        background-color: #e45ec28c;
+        font-family: 'TiroTamil';
+        font-size: 15px;
+        text-align: center; 
+        padding: 10px;  
+    }
 }

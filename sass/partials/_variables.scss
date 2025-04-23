@@ -9,3 +9,14 @@ $white-color: #FFFFFF;
 /*fonts*/
 $font-base: 'TiroRamil';
 $font-tittle-we: 'Sendflowers';
+
+/*boton*/
+@mixin boton-estilos{
+    background-color: #4CAF50;
+    border-color: #0c0908;
+    
+    &:hover{
+        background-color:#F0ABCC;
+        border-color: #E45EC2;
+    }
+}

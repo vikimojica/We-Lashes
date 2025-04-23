@@ -1,6 +1,7 @@
 /*sass --watch sass/estilos.scss css/estilos.css*/
 /*Declaracion de colores*/
 /*fonts*/
+/*boton*/
 /*Resetear valores generales*/
 * {
   margin: 0;
@@ -77,7 +78,7 @@ header nav ul li a:hover {
 /*sass --watch sass/estilos.scss css/estilos.css*/
 /*Banner presentacion Index*/
 .bannerPresentacion {
-  background-image: url(./media/bannerpresentacionn.jpg);
+  background-image: url(../media/bannerpresentacionn.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -118,7 +119,7 @@ header nav ul li a:hover {
 
 /*Segundo banner Index*/
 .bannerSegundo {
-  background-image: url(./media/Bannersegundo.jpg);
+  background-image: url(../media/Bannersegundo.jpg);
   background-size: cover;
   background-position: center;
   color: #FFFFFF;
@@ -133,6 +134,22 @@ header nav ul li a:hover {
   width: 18rem;
   background-color: hsl(315, 93%, 89%);
   margin-bottom: 20px;
+}
+.tarjetas-index .tarjetas .boton {
+  background-color: #4CAF50;
+  border-color: #0c0908;
+}
+.tarjetas-index .tarjetas .boton:hover {
+  background-color: #F0ABCC;
+  border-color: #E45EC2;
+}
+
+.texto-card p {
+  background-color: rgba(228, 94, 194, 0.5490196078);
+  font-family: "TiroTamil";
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
