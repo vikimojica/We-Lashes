@@ -33,23 +33,29 @@
 }
 
 /*Tarjetas servicios*/
-
-.tarjetas{
-    height: 400px;
-    padding: 5px;
-
-    img{
-        width: 100%;
-    height: 200px;
-    object-fit: fill;
-    transition: 0.5s;
-
-    &:hover{
-        transform: scale(1.2); 
-    }
-    }
-
-    .boton{
-        @include boton-estilos;
+.servicioPestañas{
+    overflow-x: hidden;
+    .fila{
+        margin-left: 0;
+        .tarjetas{
+            height: 400px;
+            padding: 5px;
+        
+            img{
+                width: 100%;
+            height: 200px;
+            object-fit: fill;
+            transition: 0.5s;
+        
+            &:hover{
+                transform: scale(1.2); 
+            }
+            }
+        
+            .boton{
+                @include boton-estilos;
+            }
+        }
     }
 }
+
