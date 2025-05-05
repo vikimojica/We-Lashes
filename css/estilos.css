@@ -14,11 +14,11 @@
 /*Import fuentes*/
 @font-face {
   font-family: "TiroTamil";
-  src: url(./media/TiroTamil-Regular.ttf);
+  src: url(../media/TiroTamil-Regular.ttf);
 }
 @font-face {
   font-family: "Sendflowers";
-  src: url(./media/Send_Flowers/SendFlowers-Regular.ttf);
+  src: url(../media/Send_Flowers/SendFlowers-Regular.ttf);
 }
 /*Font size*/
 html {
@@ -194,7 +194,7 @@ header nav ul li a:hover {
 }
 .servicioPestañas .fila .tarjetas img {
   width: 100%;
-  height: 400px;
+  height: 300px;
   object-fit: fill;
   transition: 0.5s;
 }
