@@ -308,7 +308,6 @@
     }
     
     /*Main Tips*/
-    /*Main Tips*/
     .contenedor-grid {
         grid-template-columns: 20% 70%;
         grid-template-rows: repeat(19, auto);
@@ -337,5 +336,43 @@
             font-size: 20px;
         }
     }
+
+    /*Main Info*/
+    .presentacion{
+        .p{
+            font-size: 3rem;
+        }
+    }
+
+    /* Main Contactos */
+    .contenedor-contacto {
+        max-width: 800px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        padding: 40px;
+        min-height: 70vh;
+        margin-bottom: 80px;
+        .titulo-contacto {
+          font-size: 30px;
+        }
+        .titulo-secundario {
+          font-size: 20px;
+        }
+        
+        
+     /* Footer */
+     .footer {
+        flex-direction: row;
+        padding: 30px;
+    }
+
+    .logoWP {
+        width: 60px;
+        bottom: 50px;
+        right: 20px;
+    }
+
+
+}
 
 }
