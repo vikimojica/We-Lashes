@@ -194,7 +194,7 @@ header nav ul li a:hover {
 }
 .servicioPestañas .fila .tarjetas img {
   width: 100%;
-  height: 200px;
+  height: 400px;
   object-fit: fill;
   transition: 0.5s;
 }
